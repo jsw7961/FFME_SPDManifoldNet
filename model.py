@@ -6,7 +6,7 @@ import torch.nn.functional as F
 from torch.utils import data
 import spd
 
-from batch_svd import batch_svd
+from torch_batch_svd import svd
 
 class ManifoldNetSPD(nn.Module):
     def __init__(self):

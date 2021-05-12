@@ -3,11 +3,12 @@ import torch.optim as optim
 from torch.utils import data
 import torch.nn as nn
 from tensorboardX import SummaryWriter
+import pdb
 
 import time
 
 from model import ManifoldNetSPD, ParkinsonsDataset
-
+pdb.set_trace()
 def count_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 
@@ -19,7 +20,8 @@ training_params = {'batch_size': 16,
 validation_params = {'batch_size': 71,
         'shuffle': False,
         'num_workers': 0}
-
+        
+pdb.set_trace()
 max_epochs = 150
 validate = True
 
